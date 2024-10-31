@@ -11,7 +11,8 @@ Transform your images into stunning ASCII art right in your browser with this in
 
 ## 🎮 Live Demo
 
-Give it a try: [Live ASCII Art Generator](https://share.streamlit.io/your-username/ascii-art-generator/main/app.py)  
+Give it a try:  
+Link 1 - [ASCII Art Generator 1](https://saketh-ascii-art-generator-1.streamlit.app/)
 No downloads required—simply upload an image and start creating!
 
 ## 📂 How It Works
