@@ -1,198 +1,60 @@
-<img src="https://raw.githubusercontent.com/dawsonbooth/ascii-art/master/logo.png" width="250" align="right"/>
+# ASCII Art Generator 🎨✨
 
-# [![ASCII ART](https://img.shields.io/badge/PYTHON%20PROJECT-ASCII%20ART-blue?style=for-the-badge&logo=Python)](https://github.com/zero-to-mastery/ascii-art)
+An open-source project to convert images into expressive ASCII art! Created with Python and Streamlit, this app lets you transform images into text-based art right in your browser. This is not just an art generator but a community-driven project that thrives on contributions to evolve with new features and ideas!
 
-Welcome to this years Python challenge for Hacktoberfest, a project with beginners and aspiring developers in mind, utilizing Python to convert images into ASCII Art.
+## 🌐 What Is ASCII Art?
 
-## ❇️ Getting Started with Hacktoberfest
+ASCII art is a form of visual art that uses characters from the ASCII standard (like `#`, `@`, `%`, etc.) to create images. This project turns uploaded images into ASCII art, mapping the visual tones and edges into symbols that capture the essence of the image.
 
-Hacktoberfest is a month-long celebration of open source, organised by Digital Ocean. ([More details here](https://github.com/zero-to-mastery/Hacktoberfest-2024/blob/master/README.md))
+## 🌟 Key Features
 
-If you've never made a pull request before, or participated in an open-source project, we recommend taking a look at:
+- **Image-to-ASCII Conversion**: Transform any image into ASCII art effortlessly.
+- **Character Customization**: Choose your preferred ASCII characters to create your art, giving endless creative options.
+- **Edge Detection**: Enhance your artwork by highlighting details and edges for better clarity.
+- **Real-time Customization**: Adjust settings on the fly and instantly view the effects on your ASCII art.
 
-- Our [Start Here Guidelines](https://github.com/zero-to-mastery/start-here-guidelines)
-- Our [Youtube Video](https://www.youtube.com/watch?v=uQLNFRviB6Q).
+## 🎮 Try It Out!
 
-These two resources have everything you need to learn about open-source, with a step-by-step guide to making your very first PR. Once you've got your feet wet, you're ready to come back and dive into Hacktoberfest fun!
+Explore the live versions:
+- [ASCII Art Generator - Version 1](https://saketh-ascii-art-generator-1.streamlit.app/)
+- [ASCII Art Generator - Version 2](https://saketh-ascii-art-generator-2.streamlit.app/)
+- [ASCII Art Generator - Version 3](https://saketh-ascii-art-generator-3.streamlit.app/)
 
----
+No downloads needed—simply upload an image and start generating ASCII art!
 
-<img src="https://images.ctfassets.net/aq13lwl6616q/51gDR7DozuNea9fltdgHIc/0c8577f24eaa1b33c40656a522f2d1db/hacktoberfest_discord_banner.png?h=250" align="center" />
+## 🛠️ How It Works
 
----
+The ASCII Art Generator uses:
+- **Python** libraries like **Pillow** and **NumPy** for image processing.
+- **Streamlit** to create a user-friendly web interface.
 
-## ❇️ But what is ASCII Art?
+### Process Overview:
+1. **Convert to Grayscale**: Images are simplified into shades of gray.
+2. **Optional Edge Detection**: Highlights edges, making the ASCII art more defined.
+3. **Map to ASCII Characters**: Grayscale values map to ASCII characters based on intensity, forming a text-based representation of the original image.
 
-> ASCII art is a graphic design technique that uses computers for presentation and consists of pictures pieced together from the 95 printable characters defined by the ASCII Standard from 1963 and ASCII compliant character sets with proprietary extended characters.
-> ~ [Wikipedia](https://en.wikipedia.org/wiki/ASCII_art)
+## 🚀 Getting Started
 
-## ❇️ How to get started:
-
-In order to get started on this project, it is recommended that you watch the section on **Scripting** in the [Python course](https://zerotomastery.io/courses/learn-python/?utm_source=github&utm_campaign=ascii-art-hf24). We talk about `sys.argv` and `Pillow` library (Image processing) in that section which would help you!
-
-### Step 1: Setup the project environment
-
-1. First up you need to fork (make a copy) of this repo to your Github account.
-
-2. Clone (download) your fork to your computer.
-
-```bash
-git clone https://github.com/{your-username}/ascii-art.git
-```
-
-3. Navigate to your project directory.
-
-```bash
-cd ascii-art
-```
-
-4. Set your streams so you can sync your clone with the original repo (get the latest updates)
-
-   - `git remote add upstream https://github.com/zero-to-mastery/ascii-art.git`
-   - `git pull upstream master`
-   - The above 2 commands will synchronize your forked version of the project with the actual repository.
-
-5. Create a virtual environment.
-
-```bash
-python3 -m venv venv
-```
-
-6. Activate the virtual environment:
-
-   - On Windows:
-
+1. Clone the repository:
    ```bash
-   venv\Scripts\activate
+   git clone https://github.com/sakethyalamanchili/ASCII-Art-Generator.git
+   cd ASCII-Art-Generator
+   ```
+2. Install the dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the app locally:
+   ```bash
+   streamlit run app.py
    ```
 
-   - On Mac/Linux:
+## 💡 Open-Source Collaboration
 
-   ```bash
-   source venv/bin/activate
-   ```
+We invite developers, designers, and ASCII art enthusiasts to contribute! Here’s how you can get involved:
 
-7. Install the required packages using the `requirements.txt` file.
-
-```bash
-pip install -r requirements.txt
-```
-
-### Step 2: Running the example code
-
-1. Run the example code with the command.
-
-```bash
-python3 community-version.py example/ztm-logo.png
-```
-
-2. Stare with amazement 😮
-
-### Step 3: Contribute and Collaborate
-
-Start chatting with other ZTM students in the #hacktoberfest-2024 channel on our Discord to get help, work together, and share your contributions!
-
-# **IMPORTANT: DO NOT MODIFY THE make_art.py FILE. ONLY THE community_version.py FILE SHOULD BE MODIFIED.**
-
-4. Make sure you have Python 3 installed on your machine
-5. Run the command cd example
-6. Run the example code with the command: `python3 community-version.py example/ztm-logo.png`
-7. Stare with amazement 😮
-8. Start chatting with other ZTM students in the #hacktoberfest-2024 channel on our Discord to get help, work together, and share your contributions!
-9. **IMPORTANT: DO NOT MODIFY THE make_art.py FILE. ONLY THE community_version.py FILE SHOULD BE MODIFIED.**
-
-## ❇️ How to contribute?
-
-Now that you see how this command line tool works, let's see how we can evolve it with our ZTM community help!! Maybe we want to display this on an HTML web page where users can submit images and we convert it to ASCII art? Maybe we want to improve how the Command Line Tool works/make it more customizeable? Or maybe modify the script to do many other types of art beyond ASCII.
-
-The options are endless and there is no wrong answer. This is all for fun, so try to customize the tool whichever way you think would be best and let's see what we get at the end of the month! Enjoy!
-
-> ⚠ Please do **not** make changes to the files in the example directory, These files should remain intact for future contributors to examine and compare with the community version! Pull requests with changes to these files will be closed.
-
-1. Examine the code in `community-version.py`, figure out what improvements your fellow community members have made (check out `FEATURES.md` for a list of existing features you can add to or improve).
-2. Make an improvement, it doesnt have to be elaborate
-3. Create a pull request
-4. [Tweet about making your first Hacktoberfest pull request](https://ctt.ac/36L1C)
-
-> Congratulations! You are now one pull request closer. Repeat these steps until you have made at least 4 qualifying pull requests. You can check how many qualifying pull requests you have made at <https://hacktoberfest.digitalocean.com/profile> Have Fun and Happy Coding!
-
-### Bonus Task
-
-Looking for a challenge?
-We have left the original code which was written in Python 2 under the `example/make_art_python2.py` file. See what happens when you run it with Python 3. See all of the errors? Can you fix it so it works with python 3? The answer is with the `example/make_art.py` file which is written in Python 3.
-
-**All discussions around this event can now be had in our dedicated Hacktoberfest channel on Discord!**
-
-## My Contribution
-
-### Simple Python Script
-
-```python
-def greet(name):
-    return f"Hello, {name}!"
-
-print(greet("Hacktoberfest"))
-### New ASCII Art Example
-
-_______
-
-/
-/ O O
-| ^ | | ‘-’ | _________/
-```
-
-## Code Quality and Linting
-
-This project uses [Ruff](https://github.com/charliermarsh/ruff), a fast Python linter, to ensure code quality and consistency. Ruff checks for common Python code issues, ensures consistent code style, and enforces best practices. It is integrated as part of the development workflow to maintain a clean codebase.
-
-### Installation
-
-To install `pre-commit` and `Ruff`, simply install the dependencies listed in `requirements.txt`:
-
-```bash
-pip install -r requirements.txt
-```
-
-Then, install the pre-commit hooks:
-
-```bash
-pre-commit install
-```
-
-This will set up `Ruff` to automatically check your code before each commit.
-
-### Running Ruff
-
-Ruff will automatically run when you make a commit, but you can also manually check your code with the following command:
-
-```bash
-ruff check .
-```
-
-To automatically fix issues detected by Ruff, you can use:
-
-```bash
-ruff check . --fix
-```
-
-### Configuration
-
-Ruff is configured through the `pyproject.toml` file. You can modify the linter rules by adjusting the following section:
-
-```toml
-[tool.ruff]
-line-length = 100  # Adjust as necessary
-select = ["E", "F", "I", "UP"]  # Add or remove specific rules here
-```
-
-### Pre-commit Hook
-
-We have configured Ruff as a pre-commit hook, so it will run automatically before every commit. If you'd like to manually run it on all files, you can use:
-
-```bash
-pre-commit run --all-files
-```
-
-### Ignoring Rules
-
-If you want to ignore specific files or directories, or disable certain rules, you can do so by editing the `.ruffignore` file or configuring rule exceptions in `pyproject.toml`.
+- **Feature Requests**: Share your ideas to make this app even better.
+- **Bug Fixes**: Help improve stability by squashing bugs.
+- **Code Enhancements**: Add optimizations or new features like custom fonts, color ASCII art, or text file output.
+  
+This project is part of the **ZTM Hacktoberfest Challenge**—perfect for first-time contributors and seasoned developers alike. Feel free to fork the repo, make contributions, and join the ASCII art community!
