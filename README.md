@@ -13,6 +13,7 @@ Transform your images into stunning ASCII art right in your browser with this in
 
 Give it a try:  
 Link 1 - [ASCII Art Generator 1](https://saketh-ascii-art-generator-1.streamlit.app/)
+Link 2 - [ASCII Art Generator 2](https://saketh-ascii-art-generator-2.streamlit.app/)
 No downloads required—simply upload an image and start creating!
 
 ## 📂 How It Works
